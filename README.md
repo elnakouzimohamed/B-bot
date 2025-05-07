@@ -92,7 +92,7 @@ python3 vision.py
 
 ### 🔗 Direct YouTube Link
 
-[Watch the Full Demo on YouTube](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[Watch the Full Demo on YouTube](https://www.youtube.com/watch?v=OxzO8reckg4)
 
 ---
 
