@@ -29,11 +29,11 @@ B-Bot/
 
 | Component/Folder                | Purpose and Functionality |
 |--------------------------------|----------------------------|
-| `computer_vision/vision.py`    | Raspberry Pi-based computer vision script that uses YOLOv8 to detect humans. If a human is detected, the image is compared to reference faces using SSIM. LEDs and a buzzer provide real-time feedback. |
+| `computer_vision/vision.py`    | Raspberry Pi-based computer vision script that uses YOLOv8 to detect humans. If a human is detected, the image is compared to reference faces using SSIM. LEDs provide real-time feedback. |
 | `fuzzyControlArduino.ino`      | Arduino sketch implementing a fuzzy logic controller that keeps the robot balanced using tilt (theta) and angular velocity (dTheta) from the MPU6050 sensor. |
 | `MPU6050_tockn.cpp/h`          | Custom library for interfacing with the MPU6050 IMU. |
 | `matlab/b_bot.fis`             | MATLAB Fuzzy Inference System (FIS) file containing the same fuzzy logic rules used in the Arduino implementation, useful for simulation or tuning. |
-| `matlab/Self_balancing_robot.slx` | Simulink model of the control system, useful for simulation or future expansion. |
+| `matlab/Self_balancing_robot.slx` | Simulink model of the system, including simscape multibody model of the robot with exact dimensions, useful for simulation or future expansion. |
 | `SOLIDWORKS/Robot Final (1).STL` | 3D printable version of the robot’s chassis. |
 | `SOLIDWORKS/Robot2.SLDPRT`     | Editable SolidWorks CAD file of the robot design. |
 
