@@ -84,8 +84,6 @@ python3 vision.py
 
 ### ▶️ Embedded YouTube Video
 
-> Replace `YOUR_VIDEO_ID` with the actual ID after uploading.
-
 ```html
 <iframe width="560" height="315" src="https://youtu.be/OxzO8reckg4" frameborder="0" allowfullscreen></iframe>
 ```
@@ -96,4 +94,4 @@ python3 vision.py
 
 ---
 
-> Created by **Khaled Bahri** and team – built with ❤️ combining fuzzy logic, computer vision, and mechanical design.
+> Created by **Mohamed El Nakouzi, Rached El Bitar, and Daniel Nassar**  combining fuzzy logic, computer vision, and mechanical design.
