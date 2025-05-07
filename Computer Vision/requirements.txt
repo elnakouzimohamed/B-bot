@@ -1,0 +1,6 @@
+opencv-python
+picamera2
+ultralytics
+numpy
+scikit-image
+RPi.GPIO
