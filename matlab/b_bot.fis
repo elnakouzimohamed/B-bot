@@ -1,0 +1,56 @@
+[System]
+Name='Self_balancing_robot'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=6
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Theta'
+Range=[-45 45]
+NumMFs=3
+MF1='Negative':'trapmf',[-45 -45 -20 -5]
+MF2='Balanced':'trimf',[-10 0 10]
+MF3='Positive':'trapmf',[5 20 45 45]
+
+[Input2]
+Name='dTheta'
+Range=[-45 45]
+NumMFs=3
+MF1='Negative':'trapmf',[-45 -45 -15 -5]
+MF2='Zero':'trimf',[-5 0 5]
+MF3='Positive':'trapmf',[5 15 45 45]
+
+[Output1]
+Name='Voltage'
+Range=[-5 5]
+NumMFs=5
+MF1='HighNeg':'trapmf',[-5 -5 -3 -1]
+MF2='LowNeg':'trimf',[-2 -1 0]
+MF3='Average':'trimf',[-0.25 0 0.25]
+MF4='LowPos':'trimf',[0 1 2]
+MF5='HighPos':'trapmf',[1 3 5 5]
+
+[Rule1]
+If (Theta is Positive) and (dTheta is Positive) then (Voltage is HighPos) (1)
+
+[Rule2]
+If (Theta is Positive) and (dTheta is Negative) then (Voltage is LowNeg) (1)
+
+[Rule3]
+If (Theta is Negative) and (dTheta is Negative) then (Voltage is HighNeg) (1)
+
+[Rule4]
+If (Theta is Negative) and (dTheta is Positive) then (Voltage is LowPos) (1)
+
+[Rule5]
+If (Theta is Balanced) and (dTheta is Negative) then (Voltage is LowNeg) (1)
+
+[Rule6]
+If (Theta is Balanced) and (dTheta is Positive) then (Voltage is LowPos) (1)
