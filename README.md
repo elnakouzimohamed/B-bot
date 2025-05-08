@@ -82,15 +82,8 @@ python3 vision.py
 
 ## 🎥 Demo Video
 
-### ▶️ Embedded YouTube Video
+[![Watch the Full Video Demo](https://img.youtube.com/vi/OxzO8reckg4/0.jpg)](https://www.youtube.com/watch?v=OxzO8reckg4)
 
-```html
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=OxzO8reckg4" frameborder="0" allowfullscreen></iframe>
-```
-
-### 🔗 Direct YouTube Link
-
-[Watch the Full Demo on YouTube](https://www.youtube.com/watch?v=OxzO8reckg4)
 
 ---
 
