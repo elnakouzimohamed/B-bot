@@ -85,7 +85,7 @@ python3 vision.py
 ### ▶️ Embedded YouTube Video
 
 ```html
-<iframe width="560" height="315" src="https://youtu.be/OxzO8reckg4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=OxzO8reckg4" frameborder="0" allowfullscreen></iframe>
 ```
 
 ### 🔗 Direct YouTube Link
